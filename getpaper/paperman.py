@@ -33,6 +33,7 @@ class PaperManager(object):
         """
         Returns a list of all the pdf links for a given paper
         """
+        paper_links = []
         # for each link we retrieved
         for sublink in subject_links:
             # download the page to which it directs
@@ -44,7 +45,6 @@ class PaperManager(object):
             
             # retrive all the links which is a direct source for a past paper pdf file
             paper_anchors = parsed_subpage.select("td > a")
-            paper_links = []
             
             # for each link to the pdf file
             for link in paper_anchors:
@@ -54,7 +54,7 @@ class PaperManager(object):
                     url = sublink+"/"+text
                     name = os.path.basename(url)
                     paper_links.append((name, url))
-            return paper_links
+        return paper_links
 
     def isValidLink(self, link):
         """ 
