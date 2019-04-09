@@ -2,7 +2,7 @@ import os, sys, requests, bs4
 
 class PaperManager(object):
     def __init__(self, code, year, session, paper_type, paper_num):
-        self.baseUrl = "https://papers.gceguide.xyz/A%20Levels"
+        self.baseUrl = "https://papers.gceguide.com/A%20Levels"
         self.code = str(code)
         self.year = str(year)
         self.session = str(session)

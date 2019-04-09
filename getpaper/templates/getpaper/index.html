@@ -29,7 +29,7 @@
                 <hr>
                 <form action="/" method="post" id="paper_form">
                     {% csrf_token %}
-                    <input required class="form-control" name="code" id="code" type="number" value="{{ fields.0 }}" placeholder="Syllabus Code">
+                    <input required class="form-control" name="code" id="code" type="number" min="1000" value="{{ fields.0 }}" placeholder="Syllabus Code">
                     <input class="form-control" name="year" id="year" type="number" min="2000" value="{{ fields.1 }}" placeholder="Year">
                     <select form="paper_form" name="session" id="session" class="form-control">
                         <option value="">Session</option>
