@@ -12,7 +12,19 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     {% load staticfiles %}
     <link href="{% static 'getpaper/css/main.css' %}" rel="stylesheet">
-
+    <style>
+      .archived-text {
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+      }
+      .archived-text a {
+        color: orange; 
+      }
+      .archived-text a:hover, .archived-text a:active {
+        color: orange; 
+      }
+    </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,7 +41,7 @@
                 <h4 class="text-center">A-level Past Papers and Mark Schemes</h4>
                 <hr>
                 
-                <p>Sorry for the inconvenience but this project has been archived. Please check out the new version made by <a href="https://oshanshrestha.com.np/">@Oshan Shrestha</a> at <a href="http://appmsx.herokuapp.com/">http://appmsx.herokuapp.com/</a></p>
+                <p class="archived-text">Sorry for the inconvenience but this project has been archived. Please check out the new version made by <a href="https://oshanshrestha.com.np/">@Oshan Shrestha</a> at <a href="http://appmsx.herokuapp.com/">http://appmsx.herokuapp.com/</a></p>
               
                 <!--
                 <form action="/" method="post" id="paper_form">
